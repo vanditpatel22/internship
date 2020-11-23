@@ -1,0 +1,15 @@
+EXERCISE DAY 1
+Create a string and slice from 2nd value to last value
+
+a = "Vandit patel is learning python"
+print(a)
+print("\nslice from 2nd value to last value\n")
+print(a[1:])
+
+OUTPUT : 
+
+Vandit patel is learning python
+
+slice from 2nd value to last value
+
+andit patel is learning python

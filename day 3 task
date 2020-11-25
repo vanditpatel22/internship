@@ -1,0 +1,67 @@
+1) Write a Python script to merge two Python dictionaries.
+
+a={1:"vandit",2:"tax"}
+b={3:"bss",4:"jjsh"}
+c= a.copy()
+c.update(b)
+print(c)
+
+Output:-
+
+{1: 'vandit', 2: 'tax', 3: 'bss', 4: 'jjsh'}
+
+
+2) Write a Python program to remove a key from a dictionary.
+
+b={1:"jay",2:"veer",3:"masum"}
+del b[2]
+print(b)
+
+Output:-
+
+{1: 'jay', 3: 'masum'}
+
+
+3) Write a Python program to map two lists into a dictionary.
+
+l1=[1,2,3,4,5,6]
+l2=["v","a","n","d","i","t"]
+d=dict(zip(l1,l2))
+print(d)
+
+Output:-
+
+{1: 'v', 2: 'a', 3: 'n', 4: 'd', 5: 'i', 6: 't'}
+
+
+4) Write a Python program to find the length of a set.
+
+a={1,2,3,5,6,7}
+print("Length of Set is =",len(a))
+
+Output:-
+
+Length of Set is = 6
+
+
+5) Write a Python program to remove the intersection of a 2nd set from the 1st set.
+
+s1={1, 2, 3, 4, 5, 6, 7, 8}
+s2 = {7, 8, 9, 10, 11, 12, 13}
+print("s1 =",s1)
+print("s2 =",s2)
+print("----------------------------------------------")
+print("After remove the intersection of a 2nd set from the 1st set ")
+s=s2-s1
+print("s =",s)
+
+Output:-
+
+s1 = {1, 2, 3, 4, 5, 6, 7, 8}
+s2 = {7, 8, 9, 10, 11, 12, 13}
+----------------------------------------------
+After remove the intersection of a 2nd set from the 1st set 
+s = {9, 10, 11, 12, 13}
+
+
+

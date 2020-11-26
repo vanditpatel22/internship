@@ -1,0 +1,99 @@
+Write a program to create a list of n integer values and do the following
+
+• Add an item in to the list (using function)
+
+l1 = [1,2,3,4,5,6,11]
+print("l1 =",l1)
+print("------------------------------------------------------")
+print("After Adding iteam to list using append function")
+l1.append(5)
+print("l1 =",l1)
+
+Output:-
+
+l1 = [1, 2, 3, 4, 5, 6, 11]
+------------------------------------------------------
+After Adding iteam to list using append function
+l1 = [1, 2, 3, 4, 5, 6, 11, 5]
+
+• Delete (using function)
+
+l1 = [1,2,3,4,5,6]
+print("l1 =",l1)
+print("-----------------------------------------------------------")
+print("After removing  item ")
+l1.remove(6)
+print("l1 =",l1)
+
+Output:-
+
+l1 = [1, 2, 3, 4, 5, 6]
+-----------------------------------------------------------
+After removing  item 
+l1 = [1, 2, 3, 4, 5]
+
+• Store the largest number from the list to a variable
+
+l1 = [1,2,3,4,5,11]
+print("l1 =",l1)
+print("-----------------------------------------------------------")
+a=max(l1)
+print("largest number from list a =",a)
+
+Output:-
+
+l1 = [1, 2, 3, 4, 5, 11]
+-----------------------------------------------------------
+largest number from list a = 11
+
+• Store the Smallest number from the list to a variable
+
+l1 = [1,2,3,4,5,11]
+print("l1 =",l1)
+print("-----------------------------------------------------------")
+b=min(l1)
+print("smallest number from list b =",b)
+
+Output:-
+
+l1 = [1, 2, 3, 4, 5, 11]
+-----------------------------------------------------------
+smallest number from list b = 1
+
+
+2) Create a tuple and print the reverse of the created tuple
+
+t1=(1,22,33,444,555,66,6,7,10)
+print("t1 =",t1)
+print("---------------------------------------------------------")
+print("after  reversing  of tuple")
+r1=t1[::-1]
+print(r1)
+
+Output:-
+
+t1 = (1, 22, 33, 444, 555, 66, 6, 7, 10)
+---------------------------------------------------------
+after  reversing  of tuple
+(10, 7, 6, 66, 555, 444, 33, 22, 1)
+
+
+3) Create a tuple and convert tuple into list
+
+t1=(1,2,3,4,5,66,777,7888,8888,"VANDIT")
+print("t1 =",t1)
+print(type(t1))
+print("---------------------------------------------------------")
+print("After converting tuple into list")
+t1=list(t1)
+print(t1)
+print(type(t1))
+
+Output:- 
+
+t1 = (1, 2, 3, 4, 5, 66, 777, 7888, 8888, 'VANDIT')
+<class 'tuple'>
+---------------------------------------------------------
+After converting tuple into list
+[1, 2, 3, 4, 5, 66, 777, 7888, 8888, 'VANDIT']
+<class 'list'>

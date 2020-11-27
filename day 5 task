@@ -1,0 +1,54 @@
+1)Create a function getting two integer inputs from user. & print the following:
+
+Addition of two numbers is +value
+
+Subtraction of two numbers is +value
+
+Division of two numbers is +value
+
+Multiplication of two numbers is +value
+
+a = int(input())
+b = int(input())
+
+def arithmetic(x,y):
+    print("Addition of two numbers is =",x+y)
+    print("Subtraction of two numbers is =",x-y)
+    print("Division of two numbers is =",x/y)
+    print("Multiplication of two numbers is =",x*y)
+    
+arithmetic(a,b)
+
+Output:-
+
+10
+5
+Addition of two numbers is = 15
+Subtraction of two numbers is = 5
+Division of two numbers is = 2.0
+Multiplication of two numbers is = 50
+
+
+2) Create a function covid( ) & it should accept patient name, and body temperature, by default the body temperature should be 98 degree.
+
+name = input()
+tem = int(input())
+def covid(name,t=98):
+    print("patient's name =",name)
+    print("patient's temperature =",t)
+covid(name,tem)
+
+Output:-
+
+PATEL VANDIT
+97
+patient's name = PATEL VANDIT
+patient's temperature = 97
+
+GITA BEN
+98
+patient's name = GITA BEN
+patient's temperature = 98
+
+
+

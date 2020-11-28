@@ -1,0 +1,204 @@
+1) Write a program to loop through a list of numbers and add +2 to every value to elements in list
+
+l1 = [1,2,3,4,444,45,11]
+l2=[]
+print(l1)
+print("\nAdding two into each element\n")
+for i in l1:
+    i=i+2
+    print(i)
+    l2.append(i) #to add new list 
+print("new list after adding two in l1 element\n")
+print(l2)
+
+Output:
+
+[1, 2, 3, 4, 444, 45, 11]
+
+Adding two into each element
+
+3
+4
+5
+6
+446
+47
+13
+new list after adding two in l1 element
+
+[3, 4, 5, 6, 446, 47, 13]
+
+
+2) Write a program to get the below pattern
+
+54321
+4321
+321
+21
+1
+
+for i in range(5,0,-1):
+    for j in range(5,0,-1):
+        if i>=j:
+             print(j,end='') 
+        
+           
+    print()
+
+Output:
+
+54321
+4321
+321
+21
+1
+
+
+3) Python Program to Print the Fibonacci sequence
+
+n=int(input("enter the sequence number = "))
+a=0
+b=1
+print(a)
+print(b)
+for i in range(n-2):
+    c=a+b
+    a=b
+    b=c
+    print(b)
+    
+ Output:
+ 
+ enter the sequence number = 10
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+
+
+4) Explain Armstrong number and write a code with a function
+
+#Armstrong number is a number that is equal to the 
+#sum of cubes of its digits
+a = int(input())
+s=0
+x=a
+while a>0:
+    b=a%10
+    a=a//10
+    s= b*b*b + s
+
+
+
+if(s == x):
+    print("This is Armstrong number")
+else:
+    print("This is not Armstrong number")
+
+Output:
+
+153
+This is Armstrong number
+
+
+5) Write a program to print the multiplication table of 9
+
+n = int(input("enter the number = "))
+for i in range(1,n+1):
+    print(i*9)
+
+Output:
+
+enter the number = 10
+9
+18
+27
+36
+45
+54
+63
+72
+81
+90
+
+
+6) Check if a program is negative or positive
+
+a = int(input("Enter the number = "))
+if a>=0:
+    print("positive number")
+else:
+    print("negative number")
+    
+ Output:
+ 
+ Enter the number = -11
+ negative number
+ 
+ Enter the number = 10
+ positive number
+ 
+ 
+ 7) Write a program to convert the number of days to ages
+ 
+ num = int(input("enter the days = "))
+ age = num//365
+ print("Age is =",age)
+
+Output:
+
+enter the days = 800
+Age is = 2
+
+
+8) Solve Trigonometry problem using math function write a program to solve using math function
+
+import math
+a = int(input())
+b = math.sin(a)**2 + math.cos(a)**2
+
+print(b)
+
+Output:
+
+80
+1.0
+
+
+9) Create a calculator only on a code level by using if condition (Basic arithmetic calculation)
+
+a = float(input("Enter The First Element = "))
+b = float(input("Enter The Second Element = "))
+
+print("For Addation Enter =  +\nFor Substraction Enter = -\nFor Multiplaction Enter = *\nFor Division Enter = /\nFor Mod Enter = %\n")
+c = input()
+if c=="+":
+    print("a + b =",a+b)
+if c=="-":
+    print("a - b =",a-b)
+if c=="*":
+    print("a * b =",a*b)
+if c=="/":
+    print("a / b =",a/b)
+if c=="%":
+    print("a % b =",a%b)
+    
+    
+Output: 
+
+Enter The First Element = 10
+Enter The Second Element = 5
+For Addation Enter =  +
+For Substraction Enter = -
+For Multiplaction Enter = *
+For Division Enter = /
+For Mod Enter = %
+
+*
+a * b = 50.0

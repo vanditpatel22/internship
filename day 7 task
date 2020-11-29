@@ -1,0 +1,77 @@
+1) Create a python module with list and import the module in another .py file and change the value in list
+
+van.py   #file name
+
+a = [11,22,33,44,55,66,77,88]
+
+task7.py     #file name
+
+import van
+
+print("list is = ",van.a) b = [] for i in van.a: b.append(i+10)
+
+print("new list is =",b)
+
+Output:-
+
+list is = [11, 22, 33, 44, 55, 66, 77, 88]
+
+new list is = [21, 32, 43, 54, 65, 76, 87, 98]
+
+
+2) Install pandas package (try to import the package in a python file
+
+pip install pandas
+
+import pandas as pd 
+a=pd.array([1,2,2])
+print(a)
+
+Output:-
+
+<IntegerArray>
+[1, 2, 2]
+Length: 3, dtype: Int64
+
+
+3) Import a module that picks random number and write a program to fetch a random number from 1 to 100 on every run
+
+import random
+a =random.randint(0,100)
+print("Random num from 1 to 100 =",a)
+
+Output:-
+
+Random num from 1 to 100 = 42
+
+4) Import sys package and find the python path
+
+import sys
+sys.path
+
+Output:-
+
+['C:\\Users\\patel',
+ 'C:\\Users\\patel\\anaconda3\\python37.zip',
+ 'C:\\Users\\patel\\anaconda3\\DLLs',
+ 'C:\\Users\\patel\\anaconda3\\lib',
+ 'C:\\Users\\patel\\anaconda3',
+ '',
+ 'C:\\Users\\patel\\anaconda3\\lib\\site-packages',
+ 'C:\\Users\\patel\\anaconda3\\lib\\site-packages\\win32',
+ 'C:\\Users\\patel\\anaconda3\\lib\\site-packages\\win32\\lib',
+ 'C:\\Users\\patel\\anaconda3\\lib\\site-packages\\Pythonwin',
+ 'C:\\Users\\patel\\anaconda3\\lib\\site-packages\\IPython\\extensions',
+ 'C:\\Users\\patel\\.ipython']
+ 
+ 
+ 5) Try to install a package and uninstall a package using pip
+ 
+ 
+pip install pandas              # for install the package
+
+pip install numpy
+
+pip uninstall pandas        #for uninstall the package
+
+pip uninstall numpy

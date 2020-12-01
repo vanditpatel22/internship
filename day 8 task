@@ -1,0 +1,150 @@
+1) List down all the error types and check all the errors using a python program for all errors
+
+Ans:-
+
+Error types
+
+1.)NameError
+
+2.)ModuleNotFoundError
+
+3.)IndexError
+
+4.)ZeroDivisionError
+
+5.)ValueError
+
+1) Name error
+
+try:
+
+raise NameError('vandit')
+except NameError:
+
+print("An exception occurred")
+2) ModuleNotFoundError
+
+try:
+
+import numpy
+
+print("Module is  Found")
+except:
+
+print("module is Not Found")
+3) Indexerror
+
+L=list(range(0,100))
+
+try:
+
+print(L[110])
+except:
+
+print("Error solved")
+4) ZeroDivisionError
+
+try:
+
+c=5/0
+
+print(c)
+except:
+
+print("Not divided by zero")
+5) ValueError
+
+try:
+
+a=int(input("Enter the Number"))
+except:
+
+print("This is Not a Number")
+
+
+2) Design a simple calculator app with try and except for all use cases
+
+a=int(input("Enter the first Number"))
+b=int(input("Enter the second Number"))
+print("For Addition Enter = 1\nFor Subraction Enter = 2\nFor Multiplication Enter = 3\nFor Division Enter = 4")
+
+ch=int(input("Enter what you want to do "))
+try:
+    if (ch == 1):
+        
+        print("The value after Addition: ",a+b)
+except:
+    
+    print("Invalid input")
+try:
+    if(ch==2):
+        
+        print("The value after Subraction: ",a-b)
+except:
+    
+    print("Invalid input")
+try:
+    if(ch==3):
+        
+        print("The value after Multiplication: ",a*b)
+except:
+    
+    print("Invalid input")
+try:
+    
+    if(ch==4):
+        
+        print("The value after Division: ",a/b)
+except:
+    print("Invalid input")
+finally:
+    print("DONE")
+    
+ Output:-
+ 
+ Enter the first Number10
+Enter the second Number5
+For Addition Enter = 1
+For Subraction Enter = 2
+For Multiplication Enter = 3
+For Division Enter = 4
+Enter what you want to do 3
+The value after Multiplication:  50
+DONE
+
+
+3) print one message if the try block raises a NameError and another for other errors
+
+try:
+    raise NameError("VANDIT")
+except NameError:
+    print("The Exception is HANDLED")
+    
+ Output:
+ 
+ The Exception is HANDLED
+ 
+ 
+ 4) When try-except scenario is not required?
+
+Ans:- Whenever there is no need for error to be handled in that try-except scenario is not required.
+
+
+5) Try getting an input inside the try catch block
+
+while True:
+    try:
+        t=int(input("Enter the integer"))
+        print("The integer you have entered is = ",t)
+        break
+    except:
+        print("Invalid integer")
+
+Output:
+
+Enter the integer2.5
+Invalid integer
+Enter the integer33.
+Invalid integer
+Enter the integer11
+The integer you have entered is =  11

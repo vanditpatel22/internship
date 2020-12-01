@@ -1,0 +1,71 @@
+1) Create a lambda function that multiplies argument x with argument y
+
+def multi(b):
+    return lambda a:a*b
+c=multi(40)
+print(c(30));
+
+Output:
+
+1200
+
+
+2) Write a Python program to create Fibonacci series to n using Lambda
+
+n = int(input("Enter the number = "))
+def fibo(count): 
+    l1 = [0, 1] 
+  
+    any(map(lambda _: l1.append(sum(l1[-2:])), 
+                                         range(2, count))) 
+  
+    return l1[:count] 
+  
+print(fibo(n));
+
+Output: 
+
+Enter the number = 15
+[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377]
+
+
+3) Write a Python program that multiply each number of given list with a given number
+
+l1=[1,22,33,4,8,99,6,3]
+n = int(input("Enter the multipler Number = "))
+print("The list = ",l1);
+
+newnumber=list(map(lambda number:number*n,l1))
+
+print(' '.join(map(str,newnumber)));
+
+Output:
+
+Enter the multipler Number = 10
+The list =  [1, 22, 33, 4, 8, 99, 6, 3]
+10 220 330 40 80 990 60 30
+
+
+4) Write a Python program to find numbers divisible by 9 from a list of numbers
+
+l1=[1,22,99,9,18,27,55,11]
+a=list(filter(lambda x: (x%9==0),l1))
+print("Numbers divided  by 9 are : ",a)
+
+Output:
+
+Numbers divided  by 9 are :  [99, 9, 18, 27]
+
+
+5) Write a Python program to count the even numbers in a given list of integers
+
+l1 = [1,2,33,44,55,66,8,11,234,55,99]
+odd= len(list(filter(lambda x: (x%2 != 0) , l1)))
+even = len(list(filter(lambda x: (x%2 == 0) , l1)))
+print("Even numbers in the list are = ", even)
+print("Odd numbers  in the list are = ", odd)
+
+Output:
+
+Even numbers in the list are =  5
+Odd numbers  in the list are =  6

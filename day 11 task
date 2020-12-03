@@ -1,0 +1,45 @@
+1. Write a program using zip() function and list() function, create a merged list of tuples from the two lists given.
+
+def merge(l1,l2):
+    l3 = (zip(l1,l2))
+    l3=list(l3)
+    return l3
+l1=[1,22,33,44,55,59,444]
+l2=[2,111,22223,44434,8847]
+print(merge(l1,l2))
+
+Output:
+
+[(1, 2), (22, 111), (33, 22223), (44, 44434), (55, 8847)]
+
+
+2. First create a range from 1 to 8. Then using zip, merge the given list and the range together to create a new list of tuples.
+
+a= [x for x in range(1,8)]
+b=[111,22,333,454,25,6,88]
+l1=list(zip(a,b))
+print(l1)
+Output:
+
+[(1, 111), (2, 22), (3, 333), (4, 454), (5, 25), (6, 6), (7, 88)]
+
+
+3. Using sorted() function, sort the list in ascending order.
+
+l1 = [22,333,54,5,888,97,52,54,22,65,87,9,85,15]
+print(sorted(l1))
+
+Output:
+
+[5, 9, 15, 22, 22, 52, 54, 54, 65, 85, 87, 97, 333, 888]
+
+
+4. Write a program using filter function, filter the even numbers so that only odd numbers are passed to the new list.
+
+b=[22,333,54,5,888,97,52,54,22,65,87,9,2,111,22223,44434,884785,15]
+list1 = list(filter(lambda x:x%2!=0,b))
+print(list1)
+
+Output:
+
+[333, 5, 97, 65, 87, 9, 111, 22223, 884785, 15]

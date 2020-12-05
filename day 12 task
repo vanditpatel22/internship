@@ -1,0 +1,30 @@
+import json
+{ 
+    "firstname": "Vandit",
+    "lastname": "Patel",
+    "hobbies": ["kabbadi","watching movie"],
+    "age": 20,
+    "exam cgpa": 9.5
+} ,{
+ 
+    "firstname": "Krupal",
+    "lastname": "Patel",
+    "hobbies": ["cricket","dancing"],
+    "age": 24,
+    "exam cgpa": 8.5
+    
+}
+with open("doc.json","w") as f:
+    json.dump(x,f,indent=4)
+
+
+from pymongo import MongoClient
+myclient=MongoClient("mongodb://localhost:270221/")
+db=myclient["mongdb"]
+Collection=db["info"]
+with open("doc.json") as f:
+    data=json.load(f)
+if isinstance(data,list):
+    Collection.insert_many(data)
+else:
+    Collection.insert_one(data)

@@ -1,0 +1,15 @@
+{ 
+    "firstname": "Vandit",
+    "lastname": "Patel",
+    "hobbies": ["kabbadi","watching movie"],
+    "age": 20,
+    "exam cgpa": 9.5
+} ,{
+ 
+    "firstname": "Krupal",
+    "lastname": "Patel",
+    "hobbies": ["cricket","dancing"],
+    "age": 24,
+    "exam cgpa": 8.5
+    
+}
